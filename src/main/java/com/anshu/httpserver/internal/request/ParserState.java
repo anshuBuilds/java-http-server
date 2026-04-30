@@ -1,4 +1,8 @@
 package com.anshu.httpserver.internal.request;
 
-public class ParserState {
+public enum ParserState {
+    INITIALIZED,
+    PARSING_HEADERS,
+    PARSING_BODY,
+    DONE
 }
